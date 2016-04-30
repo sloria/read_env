@@ -13,15 +13,16 @@ read_env
 
 read_env reads .env.
 
-Install
--------
-::
-
-    pip install read_env
+.. Install
+.. -------
+.. ::
+..
+..     pip install read_env
 
 Usage
 -----
-::
+
+.. code-block:: bash
 
     # myapp/.env
     DEBUG=true
@@ -30,6 +31,7 @@ Usage
 
 .. code-block:: python
 
+    # myapp/env.py
     import os
     from read_env import read_env
 
@@ -41,7 +43,7 @@ Usage
 Related Projects
 ----------------
 
-Check out `environs <https://github.com/sloria/environs>`_ for reading and parsing environment variables.
+Check out `environs <https://github.com/sloria/environs>`_ for parsing environment variables.
 
 License
 -------

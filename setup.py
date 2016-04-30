@@ -38,7 +38,7 @@ setup(
     install_requires=[],
     license='MIT',
     zip_safe=False,
-    keywords='reads .env files.',
+    keywords='env environment variables',
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
