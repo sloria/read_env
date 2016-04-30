@@ -2,13 +2,13 @@
 read_env
 ********
 
-.. .. image:: https://badge.fury.io/py/read_env.svg
-..     :target: http://badge.fury.io/py/read_env
-..     :alt: Latest version
-..
-.. .. image:: https://travis-ci.org/sloria/read_env.svg?branch=master
-..     :target: https://travis-ci.org/sloria/read_env
-..     :alt: Travis-CI
+.. image:: https://badge.fury.io/py/read_env.svg
+    :target: http://badge.fury.io/py/read_env
+    :alt: Latest version
+
+.. image:: https://travis-ci.org/sloria/read_env.svg?branch=master
+    :target: https://travis-ci.org/sloria/read_env
+    :alt: Travis-CI
 
 
 read_env reads .env.
