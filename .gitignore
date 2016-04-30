@@ -80,6 +80,7 @@ celerybeat-schedule
 
 # dotenv
 .env
+!tests/.env
 
 # virtualenv
 venv/
