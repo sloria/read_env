@@ -43,6 +43,7 @@ def read_env(path=None, environ=None):
     for key, value in parsed.items():
         environ.setdefault(key, value)
 
+_ITEM_RE = re.compile(r'[A-Za-z_][A-Za-z_0-9]*')
 # From Honcho. See NOTICE file for license details.
 def parse_env(content):
     """Parse the content of a .env file (a line-delimited KEY=value format) into a
@@ -62,7 +63,7 @@ def parse_env(content):
 
         if op != '=':
             continue
-        if not re.match(r'[A-Za-z_][A-Za-z_0-9]*', name):
+        if not _ITEM_RE.match(name):
             continue
 
         value = value.replace(r'\n', '\n')
