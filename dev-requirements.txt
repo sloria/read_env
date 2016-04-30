@@ -1,4 +1,12 @@
+# Task runner
 invoke
+
+# Testing
 pytest
-flake8
 tox
+
+# Linting
+flake8
+
+# Distribution
+twine

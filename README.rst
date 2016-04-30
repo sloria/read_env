@@ -13,14 +13,16 @@ read_env
 
 read_env reads .env.
 
-.. Install
-.. -------
-.. ::
-..
-..     pip install read_env
+Install
+-------
+::
+
+    pip install read_env
 
 Usage
 -----
+
+Add variables to a ``.env`` file in your project.
 
 .. code-block:: bash
 
@@ -28,6 +30,7 @@ Usage
     DEBUG=true
     PORT=5000
 
+Call ``read_env`` to add the variables to ``os.environ``.
 
 .. code-block:: python
 
