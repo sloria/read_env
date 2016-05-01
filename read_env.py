@@ -13,18 +13,20 @@ except NameError:  # Python 2
 
 ENV = '.env'
 
-def read_env(path=None, environ=None):
+def read_env(path=None, environ=None, recurse=True):
     """Reads a .env file into ``environ`` (which defaults to ``os.environ``).
     If .env is not found in the directory from which this function is called, recurse
     up the directory tree until a .env file is found.
     """
     environ = environ if environ is not None else os.environ
 
+    # By default, start search from the same file this function is called
     if path is None:
         frame = inspect.currentframe().f_back
         caller_dir = os.path.dirname(frame.f_code.co_filename)
-        path = current = os.path.join(os.path.abspath(caller_dir), ENV)
-
+        path = os.path.join(os.path.abspath(caller_dir), ENV)
+    if recurse:
+        current = path
         pardir = os.path.abspath(os.path.join(current, os.pardir))
         while current != pardir:
             target = os.path.join(current, ENV)

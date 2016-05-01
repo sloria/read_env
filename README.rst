@@ -43,6 +43,21 @@ Call ``read_env`` to add the variables to ``os.environ``.
     assert os.environ['DEBUG'] == 'true'
     assert int(os.environ['PORT']) == 5000
 
+Changelog
+---------
+
+1.1.0 (unreleased)
+++++++++++++++++++
+
+* Add ``recurse`` parameter (defaults to ``True``).
+* If ``.env`` file doesn't exist at given ``path``, recurse up the directory tree (by default).
+
+1.0.0 (2016-04-01)
+++++++++++++++++++
+
+* First PyPI release.
+
+
 Related Projects
 ----------------
 
