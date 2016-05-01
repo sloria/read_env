@@ -46,13 +46,13 @@ Call ``read_env`` to add the variables to ``os.environ``.
 Changelog
 ---------
 
-1.1.0 (unreleased)
+1.1.0 (2016-05-01)
 ++++++++++++++++++
 
 * Add ``recurse`` parameter (defaults to ``True``).
 * If ``.env`` file doesn't exist at given ``path``, recurse up the directory tree (by default).
 
-1.0.0 (2016-04-01)
+1.0.0 (2016-04-30)
 ++++++++++++++++++
 
 * First PyPI release.
