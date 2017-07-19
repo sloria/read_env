@@ -23,5 +23,6 @@ def test_read_env():
     read_env(environ=mock_environ)
     assert mock_environ == {
         'FOO': 'bar',
-        'BAZ': '42'
+        'BAZ': '42',
+        'POO': '💩'
     }

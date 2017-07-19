@@ -17,7 +17,8 @@ def test_read_env_traversal():
     read_env(environ=mock_environ)
     assert mock_environ == {
         'FOO': 'bar',
-        'BAZ': '42'
+        'BAZ': '42',
+        'POO': '💩'
     }
 
 def test_recurse_with_directory_passed():
@@ -25,7 +26,8 @@ def test_recurse_with_directory_passed():
     read_env(path=HERE, environ=mock_environ, recurse=True)
     assert mock_environ == {
         'FOO': 'bar',
-        'BAZ': '42'
+        'BAZ': '42',
+        'POO': '💩'
     }
 
 def test_recurse_with_filepath_passed_and_file_doesnt_exist():
@@ -34,7 +36,8 @@ def test_recurse_with_filepath_passed_and_file_doesnt_exist():
     read_env(path=path, environ=mock_environ, recurse=True)
     assert mock_environ == {
         'FOO': 'bar',
-        'BAZ': '42'
+        'BAZ': '42',
+        'POO': '💩'
     }
 
 def test_recurse_with_filepath_passed_and_file_exists():
@@ -43,7 +46,8 @@ def test_recurse_with_filepath_passed_and_file_exists():
     read_env(path=path, environ=mock_environ, recurse=True)
     assert mock_environ == {
         'FOO': 'bar',
-        'BAZ': '42'
+        'BAZ': '42',
+        'POO': '💩'
     }
 
 def test_recurse_false():
